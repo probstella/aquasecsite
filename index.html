@@ -9,16 +9,27 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="logoaquasec (6).png" alt="Logo da lavanderia Aquasec" class="logo">
+            <img src="logoaquasec (5).png" alt="Logo da Lavanderia Aquasec - Lavanderia e Tinturaria Profissional" class="logo">
         </div>
-        <div class="services-container">
+        <nav class="services-container" role="navigation" aria-label="Menu de Navegação">
             <ul class="services">
-                <li><a href="#service1" aria-label="Ir para os serviços de lavanderia">Serviços</a></li>
-                <li><a href="#service2" aria-label="Ir para o serviço de delivery">Delivery</a></li>
-                <li><a href="#contact" aria-label="Ir para a seção de contato e localização">Contato e Localização</a></li>
+                <li><a href="#service2" class="cta-button" aria-label="Ir para o serviço de delivery">Delivery</a></li>
+<li><a href="#contact" class="cta-button" aria-label="Ir para a seção de contato e localização">Contato e Localização</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Bem-vindo à Aquasec Lavanderia</h1>
+                <p>Oferecemos serviços de lavagem profissional para cuidar das suas roupas com carinho e eficiência.</p>
+                <a href="#service1" class="cta-button">Conheça Nossos Serviços</a>
+            </div>
+            <div class="hero-image">
+                <img src="pngegg.png" alt="Mulher segurando um balde de roupas">
+            </div>
+        </div>
+    </section>
     <div class="bolhas">
         <div class="bolha"></div>
         <div class="bolha"></div>
@@ -26,43 +37,49 @@
         <div class="bolha"></div>
         <div class="bolha"></div>
     </div>
+
     <div class="container">
-        <section id="service1">
-            <h2>Nossos Serviços</h2>
-            <div class="service1">
-                <h3>Lavagem a Seco</h3>
-                <p>Cuidamos das suas roupas delicadas com nossa lavagem a seco profissional.</p>
-            </div>
-            <div class="service1">
-                <h3>Lavagem e Passadoria</h3>
-                <p>Lavamos e passamos suas roupas, deixando-as prontas para uso.</p>
-            </div>
-            <div class="service1">
-                <h3>Lavagem de Edredons</h3>
-                <p>Limpeza profunda de edredons e cobertores de todos os tamanhos.</p>
-            </div>
-        </section>
-        <section id="service2">
-            <div class="service2">
-                <h3>Delivery</h3>
-                <p>Coletamos e entregamos na sua residência
-                    *Entre em contato com a nossa equipe para mais informações e raio de atuação do delivery.
-                </p>
+        <section id="service1" aria-labelledby="service1-heading">
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="shirt (1).png" alt="Lavagem a Seco" class="service-icon">
+                    <h3>Lavagem a Seco</h3>
+                    <p>Cuidamos das suas roupas delicadas com nossa lavagem a seco profissional.</p>
+                </div>
+                <div class="service-item">
+                    <img src="iron.png" alt="Lavagem e Passadoria" class="service-icon">
+                    <h3>Lavagem e Passadoria</h3>
+                    <p>Lavamos e passamos suas roupas, deixando-as prontas para uso.</p>
+                </div>
+                <div class="service-item">
+                    <img src="laundry-basket.png" alt="Lavagem de Edredons" class="service-icon">
+                    <h3>Lavagem de Edredons</h3>
+                    <p>Limpeza profunda de edredons e cobertores de todos os tamanhos.</p>
+                </div>
             </div>
         </section>
-        <section id="contact">
+        
+        <section id="service2" aria-labelledby="service2-heading">
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="truck (1).png" alt="Delivery" class="service-icon">
+                    <h3>Delivery</h3>
+                    <p>Coletamos e entregamos na sua residência. Entre em contato para mais informações.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
             <div class="map-info-box">
                 <!-- Mapa com a localização da lavanderia -->
                 <div class="map-container">
-                    <h2>Encontre-nos Aqui</h2>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.127488086871!2d-46.625668499999996!3d-23.5638643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce590cb57998e9%3A0x8524da6615aa2eab!2sR.%20Joaquim%20Piza%2C%2049%20-%20Cambuci%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001528-010!5e0!3m2!1spt-BR!2sbr!4v1740165808514!5m2!1spt-BR!2sbr"
-        width="100%" height="300" style="border:0;" 
-        allowfullscreen="" loading="lazy"
-        aria-label="Mapa da localização da lavanderia Aquasec, no bairro Cambuci, São Paulo.">
-</iframe>
-
+                        width="100%" height="300" style="border:0;" 
+                        allowfullscreen="" loading="lazy"
+                        aria-label="Mapa da localização da lavanderia Aquasec, no bairro Cambuci, São Paulo.">
+                    </iframe>
                 </div>
-        
+
                 <!-- Caixa de informações -->
                 <div class="info-box">
                     <h2>Informações</h2>
@@ -71,56 +88,45 @@
                     <p>Atendemos de segunda a sexta, das 8h às 18h.</p>
                 </div>
             </div>
-        </section>          
-    </div> 
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2025 Aquasec Lavanderia e Tinturaria. Todos os direitos reservados.</p>
     </footer>
 
     <!-- Botão "Voltar ao Topo" -->
-    <button id="back-to-top" title="Voltar ao topo">↑</button>
+    <button id="back-to-top" title="Voltar ao topo" aria-label="Voltar ao topo">↑</button>
 
     <!-- Script no final do body -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Scroll suave para links internos
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
-                    e.preventDefault();  // Impede o comportamento padrão do link
-    
-                    var targetElement = document.querySelector(this.getAttribute('href'));
-    
+                    e.preventDefault();
+                    const targetElement = document.querySelector(this.getAttribute('href'));
                     if (targetElement) {
-                        // Verifica qual seção está sendo clicada e ajusta o deslocamento
-                        var offset = 40;
-                        if (this.getAttribute('href') === "#service2") {
-                            offset = 190;  // Ajuste específico para a seção "Delivery"
-                        }
-    
-                        // Desloca a página até a seção com o offset ajustado
+                        const offset = this.getAttribute('href') === "#service2" ? 190 : 40;
                         window.scrollTo({
                             top: targetElement.offsetTop - offset,
                             behavior: 'smooth'
                         });
-                    } else {
-                        console.error('Elemento não encontrado!');
                     }
                 });
             });
 
-            // Script para o botão "Voltar ao Topo"
+            // Botão "Voltar ao Topo"
+            const backToTopButton = document.getElementById("back-to-top");
             window.onscroll = function() {
-                var button = document.getElementById("back-to-top");
                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    button.style.display = "block";
+                    backToTopButton.style.display = "block";
                 } else {
-                    button.style.display = "none";
+                    backToTopButton.style.display = "none";
                 }
             };
-
-            document.getElementById("back-to-top").onclick = function() {
-                document.body.scrollTop = 0; // Para Safari
-                document.documentElement.scrollTop = 0; // Para outros navegadores
+            backToTopButton.onclick = function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             };
         });
     </script>
